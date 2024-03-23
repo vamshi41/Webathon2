@@ -5,7 +5,7 @@ import './SignUp.css'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
-function SignUp() {
+function SignUp1() {
     let [city,setCity] = useState('')
     const handleChange = (e)=>{
         setCity(e.target.value)
@@ -26,7 +26,7 @@ function SignUp() {
   
   navigate('/Login')
   //instead of data as object we can give fd as object
-      axios.post("http://localhost:3500/user-api/create-user",data).then(response=>{
+      axios.post("http://localhost:3500/org-api/create-user",data).then(response=>{
    // console.log(response)
     console.log(response.status)
    if(response.status===201)
@@ -59,7 +59,7 @@ function SignUp() {
         <div className=" userreg">
         <form onSubmit={handleSubmit(formsubmit)} className=' m-4 p-4 rounded-2 mx-auto '>
             <div className='ham'>
-                <h1 className='mb-5'>USER REGISTRATION</h1>
+                <h1 className='mb-5'>ORGANISATION REGISTRATION</h1>
             </div>
             <div className="row row-cols-2">
                 <div className='mb-3 '>
@@ -148,4 +148,4 @@ function SignUp() {
 
     )
 }
-export default SignUp
+export default SignUp1

@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Protest+Revolution&display=swap');
+
+.landing{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+}
+.orig{
+    min-height: 80vh;
+}
+.protest-revolution-regular {
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: auto;
+    font-size:100px;
+    color: rgb(109, 109, 163);
+    margin-left: 200px;
+  }
+ 
+  

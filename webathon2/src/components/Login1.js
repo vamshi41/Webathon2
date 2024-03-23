@@ -6,10 +6,9 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
 import Button from 'react-bootstrap/Button';
-function Login() {
+function Login1() {
 // Login.js
-
-const { currentUser, error, userLoginStatus, loginUser } = useContext(loginContext);
+const { currentUser, error, userLoginStatus, loginUser} = useContext(loginContext);
   const navigate = useNavigate();
 
   const { register, handleSubmit, formState: { errors } } = useForm();
@@ -20,7 +19,7 @@ const { currentUser, error, userLoginStatus, loginUser } = useContext(loginConte
 
   useEffect(() => {
     if (userLoginStatus === true) {
-      navigate('/Home');
+      navigate('/Home2');
     }
   }, [userLoginStatus]);
 
@@ -34,7 +33,7 @@ const { currentUser, error, userLoginStatus, loginUser } = useContext(loginConte
      <form onSubmit={handleSubmit(handleUserLogin)} className='mx-auto'>
     <div className="">
     <div className='ham '>
-        <h1 className='mb-5'>USER LOGIN</h1>
+        <h1 className='mb-5'>ORGANISATION LOGIN</h1>
     </div>
     <div className="mx-auto justify-content-center">
         <div className='mb-3'>
@@ -64,7 +63,7 @@ const { currentUser, error, userLoginStatus, loginUser } = useContext(loginConte
     <div className="d-flex  mt-5">
         <Button type="submit" variant='contained' className='bg-success'>Login</Button>
     </div>
-    <a href="/SignUp">SignUp</a>
+    <a href="/SignUp1">SignUp</a>
     </div>
 </form>
 
@@ -73,4 +72,4 @@ const { currentUser, error, userLoginStatus, loginUser } = useContext(loginConte
   )
 }
 
-export default Login
+export default Login1

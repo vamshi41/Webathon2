@@ -1,0 +1,34 @@
+/* Custom CSS for User Cards */
+.card {
+    background-color: #a0cbf7; /* Light gray background */
+    border: 1px solid #dee2e6; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Move card up on hover */
+  }
+  
+  .card-body {
+    padding: 20px; /* Add padding inside the card */cd 
+  }
+  
+  .card-title {
+    font-size: 1.5rem; /* Larger font size for title */
+    font-weight: bold; /* Bold font weight for title */
+    margin-bottom: 10px; /* Bottom margin for title */
+  }
+  
+  .card-text {
+    margin-bottom: 10px; /* Bottom margin for text */
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 576px) {
+    .card {
+      margin-bottom: 20px; /* Add bottom margin on small screens */
+    }
+  }
+  

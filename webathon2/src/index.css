@@ -5,6 +5,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://img.freepik.com/premium-photo/concept-exams-tests-space-text_185193-79450.jpg');
+  background-size: cover; /* Ensures the background image covers the entire container */
+  background-position: center; /* Centers the background image */
+  height: 100vh;
+
+
 }
 
 code {
